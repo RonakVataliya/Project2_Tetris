@@ -86,6 +86,10 @@ Run the compiled executable:
     - 📊 The current score, high score, and drop speed are displayed after each update. 🎨📊🧱
 - 🔄 *Pause and Restart:*
     - ⏯ The game can be paused or restarted at any time using the respective keys. 🔄⏸⚙
+- 🎭 *Color-Coded Tetrominoes:*  
+    - 🎨 Each tetromino has a unique color, making it easier to differentiate shapes on the grid. 🌈🔳
+-  🛑 *Collision Detection:*  
+    - 🚧 Prevents pieces from overlapping or moving outside the grid, ensuring a fair gameplay experience. 🚫🧱
 
 ## 📄 Files 🗂️💽
 - `tetris.cpp` - 📄 The main C++ source code containing the game logic.
