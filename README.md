@@ -9,16 +9,18 @@
 ## Table of Contents 📑🔍🗂    
 1. Overview  
 2. Requirements
-3. How to Compile  
-4. How to Run
-5. Game Controls
-6. Features 
-7. Files
-8. Code Highlights
-9. Limitations
-10. Possible Enhancements 
-11. License
-12. Contact
+3. Data Structures Used
+4. Data Members
+5. How to Compile  
+6. How to Run
+7. Game Controls
+8. Key Features 
+9. Files
+10. Code Highlights
+11. Limitations
+12. Possible Enhancements 
+13. License
+14. Contact
 
 
 ## 🎯 Overview ✨📝
@@ -31,6 +33,21 @@ This is a console-based implementation of the classic Tetris game written in C++
 ## 🖥️ Requirements 🔧⚡
 - 🪟 Windows OS (due to usage of Windows-specific headers like `<windows.h>` and `_kbhit()` for keyboard input).
 - 🛠️ A C++ compiler that supports C++11 or higher (e.g., MinGW, MSVC).
+
+# Data Structures Used 🗂
+
+- *vector<vector<int>>*: Stores the game grid and individual Tetromino shapes.  
+- *vector<vector<vector<int>>*: Holds predefined Tetromino shapes.  
+- *Tetromino (Class)*: Represents a falling piece with its shape, position, and color.  
+- *Game (Class)*: Manages game logic, user input, rendering, and score tracking. 
+
+## Data Members:
+- grid: 2D vector representing the game board.
+- currentPiece: Stores the currently active Tetromino.
+- score: Tracks the player's score.
+- highScore: Stores the highest recorded score.
+- speed: Controls the drop speed of Tetrominoes.
+- isGameOver: Boolean flag to indicate the end of the game.
 
 ## 🏗️ How to Compile 🖱️💻
 Use the following command to compile the game (assuming `g++` is installed):
@@ -58,16 +75,17 @@ Run the compiled executable:
 | `R`               | 🔄 Restart the game           |
 | `ESC`             | ❌ Quit the game              |
 
-## 🌟 Features 🚀🎮
-- ⚡ **Dynamic Speed Adjustment:**
-    - 🚀 The drop speed of the tetrominoes increases by 10% after every 5 pieces placed, with a minimum speed cap of 50ms. ⚡⏱️📈
-- 🏆 **High Score Tracking:**
-    - 📄 The highest score is saved in a file named `highscore.txt` and loaded at the start of the game. 🏆📄💾
-- 🎨 **Game Rendering:**
+
+## 🌟  Key Features 🚀🎮
+- ⚡ *Dynamic Speed Adjustment:*
+    - 🚀 The drop speed of the tetrominoes increases by 10% after every 5 pieces placed, with a minimum speed cap of 50ms. ⚡⏱📈
+- 🏆 *High Score Tracking:*
+    - 📄 The highest score is saved in a file named highscore.txt and loaded at the start of the game. 🏆📄💾
+- 🎨 *Game Rendering:*
     - 🔳 The game grid and pieces are rendered using simple console characters.
     - 📊 The current score, high score, and drop speed are displayed after each update. 🎨📊🧱
-- 🔄 **Pause and Restart:**
-    - ⏯️ The game can be paused or restarted at any time using the respective keys. 🔄⏸️⚙️
+- 🔄 *Pause and Restart:*
+    - ⏯ The game can be paused or restarted at any time using the respective keys. 🔄⏸⚙
 
 ## 📄 Files 🗂️💽
 - `tetris.cpp` - 📄 The main C++ source code containing the game logic.
@@ -91,8 +109,12 @@ Run the compiled executable:
 ## 🚀 Possible Enhancements 🔮💡
 - 🌍 Cross-platform support by replacing Windows-specific code.
 - 🎨 Adding colors for different tetrominoes using ANSI escape codes.
-- 🖥️ Implementing more advanced graphics using libraries like SDL or SFML.
+- 🖥 Implementing more advanced graphics using libraries like SDL or SFML.
 - 🔊 Adding sound effects and background music.
+-  Game Enhancements & Features
+✅ Ghost Piece: Show a faint preview of where the current piece will land.
+- ✅ Hold Piece Feature: Allow players to swap the current piece with a "held" piece.
+- ✅ Next Piece Preview (Multiple Pieces):Show the next 3-5 upcoming tetrominoes instead of just one.
 
 ## 📜 License ⚖️🔓
 MIT License
