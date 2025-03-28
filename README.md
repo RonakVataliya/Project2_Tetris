@@ -7,18 +7,18 @@
 - *Vikas Soni: 202401214*
 
 ## Table of Contents 📑🔍🗂    
-1. [Overview]  
-2. [Requirements]
-3. [How to Compile]  
-4. [How to Run] 
-5. [Game Controls]
-6. [Features] 
-7. [Files]  
-8. [Code Highlights] 
-9. [Limitations]
-10. [Possible Enhancements] 
-11. [License]
-12. [Contact]
+1. Overview  
+2. Requirements
+3. How to Compile  
+4. How to Run
+5. Game Controls
+6. Features 
+7. Files
+8. Code Highlights
+9. Limitations
+10. Possible Enhancements 
+11. License
+12. Contact
 
 
 ## 🎯 Overview ✨📝
