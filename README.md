@@ -13,7 +13,7 @@
 4. Data Members
 5. How to Compile  
 6. How to Run
-7. GAmeplay Roadmap
+7. Game Roadmap
 8. Game Controls
 9. Key Features 
 10. Files
@@ -64,7 +64,7 @@ Run the compiled executable:
 ./tetris
 ```
 
-## Gameplay Roadmap
+## Game Roadmap
 
 - main()
  - ├── Game()
