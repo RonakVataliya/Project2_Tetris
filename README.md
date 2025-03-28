@@ -63,6 +63,32 @@ Run the compiled executable:
 ./tetris
 ```
 
+## Gameplay Roadmap
+
+- main()
+ - ├── Game()
+ - │    ├── hideCursor()
+ - │    ├── loadHighScore()
+ - │    └── Tetromino()  // Creates the first piece
+ - ├── while (!game.isGameOver())
+ - │    - ├── game.handleInput()
+ - │    - │    - ├── checkCollision() // For movement validation
+ - │    - │    - ├── rotate() // If user presses 'w' or Up Arrow
+ - │    - │    - ├── restart() // If user presses 'r'
+ - │    - ├── game.update()
+ - │    - │    - ├── checkCollision() // To detect landing
+ - │    - │    - ├── mergePiece() // If piece lands
+ - │    - │    - │    -├── increaseSpeed() // Every 5 pieces
+ - │    - │    - ├── clearLines() // If lines are full
+ - │    - │    - │    -├── saveHighScore() // If score is higher
+ - │    - │    - ├── Tetromino() // Create a new piece
+ - │    - │    - ├── checkCollision() // If new piece immediately collides
+ - │    - ├── game.render()
+ - ├── If gameOver
+ - │    - ├── Wait for 'R' or 'ESC'
+ - │    - ├── restart() // If 'R'
+ - │    - └── return 0 // If 'ESC'
+
 ## 🎮 Game Controls 🕹️🔄
 | Key      | Action                     |
 |----------|----------------------------|
