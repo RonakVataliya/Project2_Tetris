@@ -103,49 +103,49 @@ Run the compiled executable:
 | `ESC`             | ❌ Quit the game              |
 
 
-## 🌟  Key Features 🚀🎮
-- ⚡ *Dynamic Speed Adjustment:*
-    - 🚀 The drop speed of the tetrominoes increases by 10% after every 5 pieces placed, with a minimum speed cap of 50ms. ⚡⏱📈
-- 🏆 *High Score Tracking:*
-    - 📄 The highest score is saved in a file named highscore.txt and loaded at the start of the game. 🏆📄💾
-- 🎨 *Game Rendering:*
-    - 🔳 The game grid and pieces are rendered using simple console characters.
-    - 📊 The current score, high score, and drop speed are displayed after each update. 🎨📊🧱
-- 🔄 *Pause and Restart:*
-    - ⏯ The game can be paused or restarted at any time using the respective keys. 🔄⏸⚙
-- 🎭 *Color-Coded Tetrominoes:*  
-    - 🎨 Each tetromino has a unique color, making it easier to differentiate shapes on the grid. 🌈🔳
--  🛑 *Collision Detection:*  
-    - 🚧 Prevents pieces from overlapping or moving outside the grid, ensuring a fair gameplay experience. 🚫🧱
+## 🌟 Key Features 🚀🎮  
+- *Dynamic Speed Adjustment:*  
+   - The drop speed of the tetrominoes increases by 10% after every 5 pieces placed, with a minimum speed cap of 50ms.  
+- *High Score Tracking:*  
+   - The highest score is saved in a file named highscore.txt and loaded at the start of the game.  
+- *Game Rendering:*  
+   - The game grid and pieces are rendered using simple console characters.  
+   - The current score, high score, and drop speed are displayed after each update.  
+- *Pause and Restart:*  
+   - The game can be paused or restarted at any time using the respective keys.  
+- *Color-Coded Tetrominoes:*  
+   - Each tetromino has a unique color, making it easier to differentiate shapes on the grid.  
+- *Collision Detection:*  
+   - Prevents pieces from overlapping or moving outside the grid, ensuring a fair gameplay experience.  
 
-## 📄 Files 🗂️💽
-- `tetris.cpp` - 📄 The main C++ source code containing the game logic.
-- `highscore.txt` - 🏆 A file that stores the highest score achieved.
+## 📄 Files 🗂💽  
+- tetris.cpp - The main C++ source code containing the game logic.  
+- highscore.txt - A file that stores the highest score achieved.  
 
-## 🧠 Code Highlights 💡🔍
-- 🔄 **Tetromino Management:**
-    - 🟩 Each tetromino is represented as a 2D vector.
-    - 🔄 Pieces can be rotated and moved within the grid. 🔄🟩⬛
-- 🚫 **Collision Detection:**
-    - ⚠️ Ensures that pieces don't overlap or go beyond the game boundaries. 🚫⚠️🧱
-- 🗺️ **Game Grid:**
-    - 📊 Maintained as a 2D vector representing the current state of the board. 🗺️📊🔢
-- 🖥️ **Console Handling:**
-    - ⚙️ The console cursor is managed for smooth rendering using Windows API functions. 🖥️🖱️⚙️
+## 🧠 Code Highlights 💡🔍  
+- *Tetromino Management:*  
+   - Each tetromino is represented as a 2D vector.  
+   - Pieces can be rotated and moved within the grid.  
+- *Collision Detection:*  
+   - Ensures that pieces don't overlap or go beyond the game boundaries.  
+- *Game Grid:*  
+   - Maintained as a 2D vector representing the current state of the board.  
+- *Console Handling:*  
+   - The console cursor is managed for smooth rendering using Windows API functions.  
 
-## ⚠️ Limitations ⛔🚧
-- 🚫 Only works on Windows due to the usage of specific libraries.
-- 🎨 Basic visual design due to console-based rendering.
+## ⚠ Limitations ⛔🚧  
+- Only works on Windows due to the usage of specific libraries.  
+- Basic visual design due to console-based rendering.  
 
-## 🚀 Possible Enhancements 🔮💡
-- 🌍 Cross-platform support by replacing Windows-specific code.
-- 🎨 Adding colors for different tetrominoes using ANSI escape codes.
-- 🖥 Implementing more advanced graphics using libraries like SDL or SFML.
-- 🔊 Adding sound effects and background music.
--  Game Enhancements & Features
-✅ Ghost Piece: Show a faint preview of where the current piece will land.
-- ✅ Hold Piece Feature: Allow players to swap the current piece with a "held" piece.
-- ✅ Next Piece Preview (Multiple Pieces):Show the next 3-5 upcoming tetrominoes instead of just one.
+## 🚀 Possible Enhancements 🔮💡  
+- Cross-platform support by replacing Windows-specific code.  
+- Adding colors for different tetrominoes using ANSI escape codes.  
+- Implementing more advanced graphics using libraries like SDL or SFML.  
+- Adding sound effects and background music.  
+- *Game Enhancements & Features*  
+  - ✅ Ghost Piece: Show a faint preview of where the current piece will land.  
+  - ✅ Hold Piece Feature: Allow players to swap the current piece with a "held" piece.  
+  - ✅ Next Piece Preview (Multiple Pieces): Show the next 3-5 upcoming tetrominoes instead of just one.
 
 ## 📜 License ⚖️🔓
 MIT License
